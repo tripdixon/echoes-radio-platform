@@ -11,7 +11,19 @@ Echoes Radio is a synchronized streaming radio platform designed to deliver a co
 
 ## My Role
 
-*Coming next.*
+I led the technical design and hands-on implementation of the Echoes Radio platform from initial product definition through production deployment and mobile app release. My work spanned product scoping, system architecture, mobile development, backend APIs, cloud infrastructure, streaming services, database design, administrative tooling, testing, security, deployment, and app-store delivery.
+
+Key areas of ownership included:
+
+- Defining the V1 product scope, listener experience, and technical requirements.
+- Designing the end-to-end architecture across mobile apps, APIs, streaming infrastructure, databases, cloud hosting, and operational tooling.
+- Building and integrating the iOS and Android listener applications, including background audio, media controls, Bluetooth/headphone behavior, reconnect logic, and device-specific playback handling.
+- Designing and building backend APIs, data models, metadata synchronization, sponsor/configuration services, and administrative capabilities.
+- Configuring and operating production streaming infrastructure using Icecast and Liquidsoap, including automated playout, live broadcast cut-ins, fallback behavior, and stream recovery.
+- Setting up production infrastructure, DNS, HTTPS, reverse proxy routing, security controls, logging, monitoring, and deployment workflows.
+- Managing cross-device testing, beta distribution, App Store and Google Play submission, review cycles, release coordination, and post-release troubleshooting.
+
+The project required working across product, architecture, software engineering, infrastructure, operations, and release management rather than treating any one layer in isolation.
 
 ## Product Goals
 
