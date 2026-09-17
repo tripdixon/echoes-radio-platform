@@ -23,15 +23,14 @@
 
 ```mermaid
 flowchart LR
-    A[iOS & Android Apps] -->|REST API| B[Backend API]
+    D[(PostgreSQL)] <-->|Queries / Data| B[Backend API]
+    B <-->|REST API / Metadata / Config / Sponsors| A[iOS & Android Apps]
     A -->|AAC Audio Stream| C[Icecast]
-    B --> D[(PostgreSQL)]
     E[Admin Portal] --> B
     F[Liquidsoap Playout] --> C
     G[Music Library] --> F
     H[Live Broadcast Source] --> F
     F -->|Now-Playing Events| B
-    B -->|Metadata / Config / Sponsors| A
 ```
 
 The architecture separates **audio delivery** from **application data and control**, allowing the stream to continue independently while the apps retrieve metadata, configuration, sponsor information, and operational state through the API layer.
